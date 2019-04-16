@@ -1,0 +1,21 @@
+<div class="ui container">
+   <div class="row">
+      <div class="field">
+        <app-search-box 
+            (results)= "updateResults($event)"
+            
+        ></app-search-box>
+      </div>
+   </div>
+   <div class="row">
+      <div class="ui raised segment test">
+        <app-search-result class="ui link cards test3" 
+              *ngFor="let result of results"
+              [result]="result"
+              
+              > 
+                             
+        </app-search-result>
+      </div>
+   </div>
+</div>

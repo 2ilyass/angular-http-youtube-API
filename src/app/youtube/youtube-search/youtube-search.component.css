@@ -1,0 +1,11 @@
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  
+}
+
+.test3{
+    margin: 0 10px 0 10px;
+}

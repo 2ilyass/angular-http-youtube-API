@@ -1,0 +1,17 @@
+<div class="ui container">
+  <div class="row margin">
+    <div class="column" >
+          <div class="ui  raised segment test" style="height: auto;">
+          
+            <h2>HTTP Simple request</h2>
+            <span>
+                  <button class="ui button negative" (click)="deleteData()">Delete Data</button>
+                  <button class="ui button positive" (click)="sendRequest()">send Request</button>
+                  <button class="ui button blue" (click)="hideRequest()">Hide Request</button>
+            </span>
+            <div *ngIf="loading">loading...</div>
+            <pre class="ui container message " *ngIf="hide">{{data | json}}</pre>
+          </div>
+      </div>
+  </div>
+</div>

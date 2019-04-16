@@ -1,0 +1,26 @@
+
+  <div class="card">
+    <div class="image">
+      <img  [src]="result.thumbnailUrl">
+    </div>
+    <div class="content">
+      <div class="header">{{result.title}}</div>
+      <div class="meta">
+        <a>fun video</a>
+      </div>
+      <div class="description test2">
+        {{result.description}}
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        <a href="{{result.videoUrl}}" class="ui button positive" role="button">
+          Watch
+        </a>
+      </span>
+      <span>
+        <i class="user icon"></i>
+        {{randFunction()}} vues
+      </span>
+    </div>
+  </div>
